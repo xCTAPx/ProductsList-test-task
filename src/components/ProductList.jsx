@@ -4,7 +4,7 @@ import Product from "./Product.jsx";
 const ProductsPage = () => {
 
   const getProducts = async () => {
-    const response = await fetch("https://api.myjson.com/bins/jtt20");
+    const response = await fetch("products.json");
     if (response.ok) {
       const data = await response.json();
       console.log(data);
